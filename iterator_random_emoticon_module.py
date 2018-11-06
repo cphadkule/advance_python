@@ -23,3 +23,5 @@ class CoolEmoticonGenerator(object):
         grp = random.choice(self.grouped_strings)
         return self.create_emoticon(grp)
 
+g = CoolEmoticonGenerator()
+print([next(g) for _ in range(5)])
